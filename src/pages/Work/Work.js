@@ -1,6 +1,6 @@
 import React from 'react';
 import InfoSection from '../../components/InfoSection';
-import { homeObjFour, homeObjOne, homeObjThree, homeObjTwo } from './Data';
+import { homeObjFive, homeObjFour, homeObjOne, homeObjThree, homeObjTwo } from './Data';
 
 
 
@@ -11,6 +11,7 @@ function Work() {
       <InfoSection {...homeObjOne}/>
      <InfoSection {...homeObjFour}/>
       <InfoSection {...homeObjThree}/>
+      
     
     </>
   );

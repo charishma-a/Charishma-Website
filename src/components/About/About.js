@@ -1,9 +1,6 @@
 
 import React from 'react';
 import { Button } from '../../globalStyles';
-import { AiFillThunderbolt } from 'react-icons/ai';
-import { GiCrystalBars } from 'react-icons/gi';
-import { GiCutDiamond, GiRock } from 'react-icons/gi';
 import { ImCamera } from 'react-icons/im';
 import { IconContext } from 'react-icons/lib';
 import {MdOutlineSportsVolleyball} from 'react-icons/md'
@@ -23,15 +20,88 @@ import {
   PricingCardFeatures,
   PricingCardFeature
 } from './AboutElements';
+import ru from '../../images/ru.jpeg'
+import jntu from '../../images/jntu.jpeg'
+import vymo from '../../images/vymo.png'
+import kernls from '../../images/kernls.png'
+import InfoSection from '../InfoSection';
+
+export const homeObjOne = {
+    lightBg: true,
+    lightText: false,
+    lightTopLine: false,
+    lightTextDesc: false,
+    topLine: 'Work Experience',
+    headline: 'Full Stack Developer',
+    description:
+      'I am currently working as a Full Stack Developer at Kernls',
+    buttonLabel: 'You can look more into kernls here: https://kernls.com',
+    imgStart: 'start',
+    img: kernls,
+    alt: 'Vault'
+  };
+
+  export const homeObjThree = {
+    lightBg: false,
+    lightText: true,
+    lightTopLine: true,
+    lightTextDesc: true,
+    topLine: 'Education',
+    headline: 'Master of Engineering, Computer Science',
+    description:
+      "I have done my M.Eng in Computer Science from Ryerson University, Toronto, Canada.",
+    buttonLabel: 'Know more about Ryerson here: https://www.ryerson.ca',
+    imgStart: 'start',
+    img: ru,
+    alt: 'Vault'
+  };
+
+  export const homeObjFour = {
+    lightBg: true,
+    lightText: false,
+    lightTopLine: false,
+    lightTextDesc: false,
+    topLine: 'Work Experience',
+    headline: 'Internship and Full Time',
+    description:
+      'I have joined Vymo as a software intern and later worked as a Full time employee as a Full Stack Developer for 2 years.',
+    buttonLabel: 'To know more about Vymo, go here: https://www.getvymo.com/',
+    imgStart: 'start',
+    img: vymo,
+    alt: 'Vault'
+  };
+
+
+export const homeObjFive = {
+    lightBg: false,
+    lightText: true,
+    lightTopLine: true,
+    lightTextDesc: true,
+    topLine: 'Education',
+    headline: 'Bachelor of Technology, Information Technology',
+    description:
+      'I have done my B.Tech from Jawaharlal Nehru Technological University, Kakinada, India',
+    buttonLabel: 'Know more about JNTUK here: https://www.jntuk.edu.in/',
+    imgStart: 'start',
+    img: jntu,
+    alt: 'Vault'
+  };
+
+
 
 function About() {
   return (
+      <>
+      <InfoSection {...homeObjOne}/>
+      <InfoSection {...homeObjThree}/>
+      <InfoSection {...homeObjFour}/>
+      <InfoSection {...homeObjFive}/>
     <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
       <PricingSection>
         <PricingWrapper>
           <PricingHeading>My Interests</PricingHeading>
           <PricingContainer>
-            <PricingCard to='/sign-up'>
+            <PricingCard to='/work'>
               <PricingCardInfo>
                 <PricingCardIcon>
                   <MdLaptopChromebook/>
@@ -87,6 +157,7 @@ function About() {
         </PricingWrapper>
       </PricingSection>
     </IconContext.Provider>
+    </>
   );
 }
 export default About;

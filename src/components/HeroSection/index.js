@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
 import * as sc from './HeroElements'
-import Video from '../../videos/video.mp4'
 import Pic from '../../images/pic.jpg'
 import { FaArrowRight } from 'react-icons/fa'
 import {Button} from '../ButtonElement'
-
+import bg from '../../videos/bg.mp4'
+import bl from '../../images/bl.jpg'
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
     const onHover = ()=>{
@@ -13,10 +13,10 @@ const HeroSection = () => {
     return (
         <sc.HeroContainer>
             <sc.HeroBg>
-                <sc.VideoBg autoPlay loop muted src={Video} type = 'video/mp4'/>
+                <sc.VideoBg autoPlay loop muted src={bg} type = 'video/mp4'/>
             </sc.HeroBg>
             <sc.ImgWrapper>
-            <sc.Img src={Pic} alt='hey' />
+            <sc.Img src={bl} alt='hey' />
             </sc.ImgWrapper>
 
             <sc.InfoColumn>
@@ -28,12 +28,12 @@ const HeroSection = () => {
               </sc.TextWrapper>
             </sc.InfoColumn>
             <sc.HeroBtnWrapper>
-                <Button to ='signup' onMouseEnter={onHover} onMouseLeave={onHover}
+                {/* <Button to ='signup' onMouseEnter={onHover} onMouseLeave={onHover}
                 primary='true'
                 dark='true'
                 >
                     Know me better! {hover? <sc.ArrowForward/> : <sc.ArrowRight/>}
-                </Button>
+                </Button> */}
             </sc.HeroBtnWrapper>
         </sc.HeroContainer>
     )
