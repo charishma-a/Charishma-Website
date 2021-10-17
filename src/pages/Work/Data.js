@@ -41,7 +41,7 @@ export const homeObjThree = {
   topLine: '',
   headline: 'Emotion Classification of Faces',
   description:
-    "	Extracted the features of images and reduced the dimensions of the dataset. Trained the model using happy and sad faces. Predicted the emotion of test dataset using SVM. Tech Stack: SVM, Jupyter notebook.",
+    "	Extracted the features of images and reduced the dimensions of the dataset. Trained the model using happy and sad faces. Achieved 90% accuracy.  Predicted the emotion of test dataset using SVM. Tech Stack: SVM, Jupyter notebook.",
   buttonLabel: 'Link: https://github.com/charishma-a/Emotion-classification',
   imgStart: 'start',
   img: faces,
