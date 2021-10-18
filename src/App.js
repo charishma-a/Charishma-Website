@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import About from './components/About/About';
 import Travel from './pages/Travel/Travel';
 import Contact from './pages/Contact/Contact';
+
 function App() {
   return (
 
@@ -20,7 +21,9 @@ function App() {
     <Route path='/travel' component={Travel}/>
     <Route path='/contact' component={Contact}/>
     </Switch>
+   
     </Router>
+    
   );
 }
 

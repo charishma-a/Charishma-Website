@@ -41,7 +41,7 @@ function FullDetails() {
             <TravelInfoSection
               name="Lenvik, Norway"
               src={t4}
-              text="Peggys Cove, Nova Scotia, Canada"
+              text="Peggy's Cove, Nova Scotia, Canada"
               label="Explore"
               path="/services"
             />
@@ -80,14 +80,14 @@ function FullDetails() {
              <TravelInfoSection
               name="pamukkale turkey"
               src={t8}
-              text="Statue of Liberty, San Francisco, USA"
+              text="Statue of Liberty, New York, USA"
               label="Explore"
               path="/tours"
             />
              <TravelInfoSection
               name="pamukkale turkey"
               src={t10}
-              text="Light House, Nova Scotia, Canada"
+              text="Peggy's Cove, Nova Scotia, Canada"
               label="Explore"
               path="/tours"
             />
