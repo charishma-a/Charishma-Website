@@ -1,15 +1,12 @@
 import React,{useState} from 'react'
 import * as sc from './HeroElements'
-import Pic from '../../images/pic.jpg'
-import { FaArrowRight } from 'react-icons/fa'
-import {Button} from '../ButtonElement'
 import bg from '../../videos/bg.mp4'
 import bl from '../../images/bl.jpg'
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
-    const onHover = ()=>{
-        setHover(!hover)
-    }
+    // const onHover = ()=>{
+    //     setHover(!hover)
+    // }
     return (
         <sc.HeroContainer>
             <sc.HeroBg>
