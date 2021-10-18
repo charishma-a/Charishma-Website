@@ -1,12 +1,9 @@
-import React,{useState} from 'react'
+import React from 'react'
 import * as sc from './HeroElements'
 import bg from '../../videos/bg.mp4'
 import bl from '../../images/bl.jpg'
 const HeroSection = () => {
-    const [hover, setHover] = useState(false);
-    // const onHover = ()=>{
-    //     setHover(!hover)
-    // }
+  
     return (
         <sc.HeroContainer>
             <sc.HeroBg>
@@ -25,12 +22,7 @@ const HeroSection = () => {
               </sc.TextWrapper>
             </sc.InfoColumn>
             <sc.HeroBtnWrapper>
-                {/* <Button to ='signup' onMouseEnter={onHover} onMouseLeave={onHover}
-                primary='true'
-                dark='true'
-                >
-                    Know me better! {hover? <sc.ArrowForward/> : <sc.ArrowRight/>}
-                </Button> */}
+              
             </sc.HeroBtnWrapper>
         </sc.HeroContainer>
     )
