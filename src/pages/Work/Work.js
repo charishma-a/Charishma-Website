@@ -1,6 +1,6 @@
 import React from 'react';
 import InfoSection from '../../components/InfoSection';
-import { homeObjFive, homeObjFour, homeObjOne, homeObjThree, homeObjTwo } from './Data';
+import {  homeObjFour, homeObjOne, homeObjThree, homeObjTwo } from './Data';
 
 
 

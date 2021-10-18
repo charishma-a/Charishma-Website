@@ -14,24 +14,14 @@ import {
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
 
-  useEffect(() => {
-    showButton();
-  }, []);
 
-  window.addEventListener('resize', showButton);
+  
 
   return (
     <>
@@ -48,12 +38,12 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/about'>
+                <NavLinks to='/about' onClick={closeMobileMenu}>
                   About Me
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/work'>
+                <NavLinks to='/work' onClick={closeMobileMenu}>
                   My Work
                 </NavLinks>
               </NavItem>
